@@ -99,7 +99,7 @@
                     <h3>Resources Hub</h3>
                     <p></p>
                     <div class="project-links">
-                        <a href="https://resources-sigma-liart.vercel.app/" target="_blank">View</a>
+                        <a href="https://resources-eight.vercel.app/" target="_blank">View</a>
                     </div>
                 </div>
             </div>
