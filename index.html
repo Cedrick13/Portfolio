@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ced | Portfolio</title>
+        <link rel="stylesheet" href="look.css" />
+        <link rel="icon" type="image/x-icon" href="./images/icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Scroll-Up Button -->
+        <button class="scroll-up-btn button" id="scrollBtn">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                ></path>
+            </svg>
+        </button>
+
+        <!-- Loader Background -->
+        <div class="loader_bg">
+            <!-- Circle Loader -->
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle r="32" cy="40" cx="40"></circle>
+                </svg>
+            </div>
+
+            <!-- Triangle Loader -->
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+
+            <!-- Square Loader -->
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect height="64" width="64" y="8" x="8"></rect>
+                </svg>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="loaders">CED</div>
+
+                <!-- Hamburger Menu -->
+                <div class="menu-btn" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <!-- Media Icon -->
+                <ul class="example-2" id="menu">
+
+                    <!-- Dark Mode Button -->
+                        <li class="icon-content">
+                            <button id="theme-toggle" class="theme-btn">🌙</button>
+                        </li>
+
+                    <!-- GitHub -->
+                    <li class="icon-content">
+                        <a href="https://github.com/Cedrick13" aria-label="GitHub" data-social="github">
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill="currentColor"
+                                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5
+                                    C9.34,21.58 9.5,21.27 9.5,21V19.24C6.73,19.91 6.14,17.89
+                                    6.14,17.89C5.68,16.64 5,16.32 5,16.32C4.09,15.72
+                                    5.08,15.73 5.08,15.73C6.1,15.81 6.63,16.77 6.63,16.77
+                                    C7.5,18.34 8.97,17.89 9.54,17.64C9.63,16.93 9.89,16.43
+                                    10.17,16.17C7.95,15.9 5.62,14.98 5.62,11.48
+                                    C5.62,10.36 6.03,9.46 6.71,8.76C6.6,8.5 6.23,7.43
+                                    6.82,5.97C6.82,5.97 7.66,5.7 9.5,7C10.29,6.78 11.15,6.67
+                                    12,6.67C12.85,6.67 13.71,6.78 14.5,7C16.34,5.7
+                                    17.18,5.97 17.18,5.97C17.77,7.43 17.4,8.5 17.29,8.76
+                                    C17.97,9.46 18.38,10.36 18.38,11.48C18.38,14.99
+                                    16.05,15.89 13.83,16.16C14.19,16.47 14.5,17.06
+                                    14.5,18V21C14.5,21.27 14.66,21.59 15.17,21.5
+                                    C19.14,20.17 22,16.42 22,12A10,10 0 0,0 12,2Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">GitHub</div>
+                    </li>
+
+                    <!-- Twitter -->
+                    <li class="icon-content">
+                        <a href="https://twitter.com/Just_Ced4" aria-label="Twitter" data-social="twitter">
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.36
+                                    8.56 8.56 0 01-2.71 1.04 4.25 4.25 0 00-7.24 3.87
+                                    A12.06 12.06 0 013 5.16a4.25 4.25 0 001.31 5.67
+                                    4.18 4.18 0 01-1.92-.53v.05a4.26 4.26 0 003.4 4.17
+                                    4.25 4.25 0 01-1.91.07 4.26 4.26 0 003.97 2.95
+                                    A8.53 8.53 0 012 19.54 12.06 12.06 0 008.29 21
+                                    c7.55 0 11.68-6.26 11.68-11.68
+                                    0-.18-.01-.35-.02-.53A8.36 8.36 0 0022.46 6z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Twitter</div>
+                    </li>
+
+                    <!-- Facebook -->
+                    <li class="icon-content">
+                        <a href="https://www.facebook.com/Loyal.Wew/" aria-label="Facebook" data-social="facebook">
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M22 12A10 10 0 1 0 10 21.95V14.89H7.1V12h2.9V9.79
+                                    c0-2.88 1.7-4.47 4.32-4.47 1.25 0 2.56.22 2.56.22v2.82
+                                    h-1.44c-1.42 0-1.86.88-1.86 1.79V12h3.17l-.51 2.89h-2.66
+                                    v7.06A10 10 0 0 0 22 12Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+
+                    <!-- Instagram -->
+                    <li class="icon-content">
+                        <a href="https://www.instagram.com/cedcllp/" aria-label="Instagram" data-social="instagram">
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10
+                                    c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7m10 2
+                                    c1.65 0 3 1.35 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7
+                                    a3 3 0 0 1 3-3h10m-5 3a5 5 0 1 0 0 10 5 5 0 0 0
+                                    0-10m0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6m4.5-2a1 1 0
+                                    1 1 0 2 1 1 0 0 1 0-2Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+
+                    <!-- LinkedIn -->
+                    <li class="icon-content">
+                        <a
+                            href="https://www.linkedin.com/in/cedrick-embestro-01bb77284"
+                            aria-label="LinkedIn"
+                            data-social="linkedin"
+                        >
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5
+                                    A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 17.34V10.67H5.67
+                                    V17.34H8.34M7 9.43A1.43 1.43 0 1 0 7 6.57
+                                    1.43 1.43 0 0 0 7 9.43M18.33 17.34V13.33
+                                    C18.33 11.34 17.33 10 15.33 10C14.09 10 13.34 10.67
+                                    12.94 11.33H12.89V10.67H10.33V17.34H12.89V13.67
+                                    C12.89 12.67 13.56 12 14.56 12C15.56 12 16 12.67
+                                    16 13.67V17.34H18.33Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">LinkedIn</div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- home section start -->
+        <section class="home" id="home">
+            <div class="max-width home-container">
+                <div class="home-text" data-aos="fade-right" data-aos-delay="100">
+                    <h1 class="name">
+                        Cedrick
+                        <span>Embestro</span>
+                    </h1>
+                    <h3 class="tagline">
+                        And I'm a
+                        <span class="typing"></span>
+                    </h3>
+                    <a href="mailto:cedrick13wew@gmail.com" class="cta-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Me
+                    </a>
+                </div>
+                <div class="home-image" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/BG.jpg" alt="Cedrick profile" />
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section start -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title" data-aos="fade-up">Portfolio</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Recent Projects</p>
+                <div class="filter-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="figma" data-aos="fade-up" data-aos-delay="250">
+                        Figma
+                    </button>
+                    <button class="filter-btn" data-filter="code" data-aos="fade-up" data-aos-delay="350">Code</button>
+                </div>
+                <div class="project-container">
+                    <!-- Card 1 -->
+                    <div class="project-card figma" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/P1.png" alt="Project 1" />
+                        <div class="project-overlay">
+                            <h3>Atmos</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.figma.com/proto/mC0b299hRhAkTUtGQy7ERL/QR-Code?type=design&amp;node-id=304-144&amp;t=VQVPovenSGEYVefU-1&amp;scaling=scale-down&amp;page-id=0%3A1&amp;mode=design"
+                                    target="_blank"
+                                    >View</a
+                                >
+
+                                <!-- <a href="https://www.figma.com/file/mC0b299hRhAkTUtGQy7ERL/QR-Code?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=fXPWqmVUZ0wUNnpE-1" target="_blank">Code</a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="project-card figma" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/P4.png" alt="Project 2" />
+                        <div class="project-overlay">
+                            <h3>Pre Enrollment</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.figma.com/proto/u4uLc6upTIWYvdhJNuz8qe/Untitled?type=design&amp;node-id=1-4&amp;t=NyeghKdhduYjDP2g-0&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A4"
+                                    target="_blank"
+                                    >View</a
+                                >
+
+                                <!--<a href="https://www.figma.com/file/u4uLc6upTIWYvdhJNuz8qe/Untitled?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=oND3RObH2XPnYFwi-1" target="_blank">Code</a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="project-card figma" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/P5.png" alt="Project 3" />
+                        <div class="project-overlay">
+                            <h3>Static Website</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.figma.com/proto/z3idfZCf2ILYsZmgJW532O/Dashboard?type=design&amp;node-id=54-858&amp;t=VOM7BfNwgon7Gh97-1&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=54%3A858&amp;mode=design"
+                                    target="_blank"
+                                    >View</a
+                                >
+
+                                <!--<a href="https://www.figma.com/file/z3idfZCf2ILYsZmgJW532O/Dashboard?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=AH7rE2w2HMRNAPEt-1" target="_blank">Code</a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="project-card figma" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/P6.png" alt="Project 3" />
+                        <div class="project-overlay">
+                            <h3>Voting System</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.figma.com/proto/sRmpaMV0JtcNDqdngIQyK8/Voting-System?type=design&amp;node-id=17-67&amp;t=18u6hMFOizOZcTXC-1&amp;scaling=scale-down&amp;page-id=15%3A2&amp;starting-point-node-id=17%3A67&amp;mode=design"
+                                    target="_blank"
+                                    >View</a
+                                >
+
+                                <!--<a href="https://www.figma.com/file/sRmpaMV0JtcNDqdngIQyK8/Voting-System?type=design&amp;node-id=15%3A2&amp;mode=design&amp;t=45h2Y7lIovKXmHJ9-1" target="_blank">Code</a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="project-card figma" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/P2.png" alt="Project 3" />
+                        <div class="project-overlay">
+                            <h3>Whse Management System</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.figma.com/proto/LPSYepuK6pKfgD4LadjvOh/Whsm-System?page-id=104%3A22&amp;node-id=195-7119&amp;viewport=629%2C953%2C0.22&amp;t=kwkqEx2959vXItwn-1&amp;scaling=contain&amp;content-scaling=fixed&amp;starting-point-node-id=195%3A7119"
+                                    target="_blank"
+                                    >View</a
+                                >
+
+                                <!--<a href="https://www.figma.com/file/sRmpaMV0JtcNDqdngIQyK8/Voting-System?type=design&amp;node-id=15%3A2&amp;mode=design&amp;t=45h2Y7lIovKXmHJ9-1" target="_blank">Code</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CODE PROJECTS -->
+                    <!-- Card 1 -->
+                    <div class="project-card code" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/Code 1.png" alt="Code Project 2" />
+                        <div class="project-overlay">
+                            <h3>Event Gallery</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a href="https://event-showcase-ten.vercel.app/#home-section" target="_blank">View</a>
+                                <!--<a href="https://yourwebsite.com" target="_blank">Live</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="project-card code" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/Code 2.png" alt="Code Project 2" />
+                        <div class="project-overlay">
+                            <h3>Resources Hub</h3>
+                            <p></p>
+                            <div class="project-links">
+                                <a href="https://resources-sigma-liart.vercel.app/" target="_blank">View</a>
+                                <!--<a href="https://yourwebsite.com" target="_blank">Live</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section start -->
+        <section class="about" id="about">
+            <div class="max-width about-container">
+                <h2 class="title" data-aos="fade-up">About Me</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Personal</p>
+                <div class="about-content">
+                    <div class="about-left" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="images/about.jpg" alt="Cedrick" />
+                    </div>
+                    <div class="about-right" data-aos="fade-up" data-aos-duration="3000">
+                        <h3 class="about-heading">Who I Am</h3>
+                        <p>
+                            I am
+                            <b>Ced</b>
+                            — a passionate
+                            <b>IT Support Specialist</b>
+                            and
+                            <b>network enthusiast</b>
+                            dedicated to solving technical problems and maintaining top system performance. My skills
+                            include configuring networks, performing system maintenance, and supporting end-users.
+                        </p>
+                        <p>
+                            I am also expanding my expertise in
+                            <b>software development</b>
+                            by creating tools and applications with
+                            <b>C#</b>
+                            and
+                            <b>MySQL</b>
+                            to improve productivity and streamline workflows.
+                        </p>
+                        <a
+                            href="https://drive.google.com/file/d/1CtIOC_GidAlgDlXo78zhqgyMpz2GH5BK/view?usp=sharing"
+                            class="download-btn"
+                        >
+                            <i class="fas fa-arrow-circle-down"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title" data-aos="fade-up">Skills</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">My Technical</p>
+                <div class="skills-wrapper">
+                    <!-- Frontend Developer -->
+                    <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Frontend Developer</h3>
+                            <p></p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <img src="images/c-sharp.png" alt="C#" />
+                                <span>C#</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/js.png" alt="JavaScript" />
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/media.png" alt="Bootstrap" />
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/html-5.png" alt="HTML5" />
+                                <span>HTML5</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/css-3.png" alt="CSS3" />
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Developer -->
+                    <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Developer</h3>
+                            <p></p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <img src="images/brand-laravel.png" alt="Laravel" />
+                                <span>Laravel</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/php.png" alt="PHP" />
+                                <span>PHP</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/mysql.png" alt="MySQL" />
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Others -->
+                    <div class="skill-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Others</h3>
+                            <p></p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <img src="images/figma.png" alt="Figma" />
+                                <span>Figma</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/draw.io.png" alt="Draw.io" />
+                                <span>Draw.io</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/xd.png" alt="Adobe XD" />
+                                <span>Adobe XD</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/capcut.png" alt="Capcut" />
+                                <span>Capcut</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/canva.png" alt="Canva" />
+                                <span>Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- qualification section start -->
+        <section class="qualification section" id="qualification">
+            <h2 class="title" data-aos="fade-up">Qualification</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">My Personal Journey</p>
+
+            <!-- ===== Tabs ===== -->
+            <div class="qualification__tabs" data-aos="fade-up">
+                <div class="qualification__button button--flex qualification__active" data-target="#work">Work</div>
+                <div class="qualification__button button--flex" data-target="#education">Education</div>
+            </div>
+
+            <!-- ===== Work Content ===== -->
+            <div class="qualification__content qualification__active" id="work" data-content="" data-aos="fade-up">
+                <div class="qualification__timeline">
+                    <!-- Row 1 -->
+                    <div class="qualification__row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="qualification__content left">
+                            <h3>IT Support Specialist</h3>
+                            <p>Timecargo | Makati City</p>
+                            <div class="qualification__calendar"></div>
+                            <span class="qualification__year">Current</span>
+                        </div>
+                        <div class="qualification__middle">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="qualification__content right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="qualification__row">
+                <div class="qualification__content left">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="qualification__middle">
+                    <!--<span class="dot"></span> -->
+                </div>
+                <div class="qualification__content right">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="qualification__content right"></div>
+
+            <!-- ===== Education Content ===== -->
+            <div class="qualification__content" id="education" data-content="" data-aos="fade-up">
+                <div class="qualification__timeline">
+                    <!-- Row 1 -->
+                    <div class="qualification__row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="qualification__content left">
+                            <h3>Bachelor of Science in Computer Science - ACLC College Iriga</h3>
+                            <p>(August 2020 - June 2024)</p>
+                        </div>
+                        <div class="qualification__middle">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="qualification__content right">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="qualification__row" data-aos="fade-up" data-aos-delay="200">
+                        <div class="qualification__content left">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <div class="qualification__middle">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="qualification__content right">
+                            <h3>Programming - Senior High School | ACLC</h3>
+                            <p>(June 2018 - April 2020)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Get in Touch Section ===== -->   
+        <section class="contact" id="contact">
+            <h2 class="contact__title" data-aos="fade-up">Get in Touch</h2>
+            <p class="contact__text" data-aos="fade-up" data-aos-delay="100">
+                Feel free to reach out for collaborations or just a friendly chat 👋
+            </p>
+            <a href="mailto:cedrick13wew@gmail.com" class="contact__button" data-aos="fade-up" data-aos-delay="200">
+                Say Hi
+            </a>
+        </section>
+
+        <canvas id="snow"></canvas>
+
+        <!-- footer section start -->
+        <footer>
+            <p>
+                ©
+                <span id="year"></span>
+                Ced. All rights reserved.
+            </p>
+        </footer>
+        <script src="script.js"></script>
+
+        <!-- Load AOS library -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    </body>
+</html>
