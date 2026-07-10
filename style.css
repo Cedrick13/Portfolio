@@ -858,6 +858,21 @@ body.dark .navbar.sticky {
     color: #FEFCFF;
 }
 
+.certificate-card{
+    position: relative;
+    overflow: hidden;
+    transition: .35s ease;
+    border-radius: 18px;
+}
+
+.certificate-card:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px rgba(0,188,212,.4),
+        0 0 30px rgba(0,188,212,.3),
+        0 0 60px rgba(0,188,212,.2);
+}
+
 /* --- PROJECTS SECTION (FIGMA ROW STYLE) --- */
 .projects {
     background: var(--bg);
