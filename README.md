@@ -1,1 +1,15 @@
-# Hi, I'm Cedrick Embestro, an IT Support with a passion for troubleshooting, problem-solving, and ensuring seamless technology operations. I specialize in providing technical assistance, maintaining systems, and improving IT infrastructure.
+# Hi, I'm Cedrick 👋
+
+**IT Support Specialist | Network Enthusiast**
+
+IT Support Specialist with experience in **technical support, troubleshooting, system maintenance, and network administration**. I also have a background in **web development, UI/UX, and database systems**.
+
+### Skills
+
+* IT Support & Troubleshooting
+* Networking & System Administration
+* Hardware & Software Maintenance
+* PHP, C#, MySQL
+* HTML, CSS, JavaScript
+* Git & GitHub
+* Figma / UI/UX
